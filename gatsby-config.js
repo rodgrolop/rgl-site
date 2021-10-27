@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.rodrigogross.me/",
     title: "Rgl Site",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
