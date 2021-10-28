@@ -19,8 +19,8 @@ const reducer = (state, action) => {
 };
 
 const LayoutContextProvider = (props) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const value = { state, dispatch };
+  const [layoutState, dispatch] = useReducer(reducer, initialState);
+  const value = { layoutState, dispatch };
   return (
     <LayoutContext.Provider value={value}>
       {props.children}

@@ -13,7 +13,12 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-layout",
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/app_common/app/App`),
+      },
+    },
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
