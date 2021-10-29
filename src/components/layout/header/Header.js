@@ -14,10 +14,12 @@ const Header = () => {
       <Toolbar>
         <MenuButton />
         <StaticImage
-          src="../../../assets/common/logo.png"
+          src="../../../assets/images/logo.png"
           alt="Caffeine Logo"
           width={64}
           height={64}
+          placeholder="blurred"
+          layout="fixed"
         />
       </Toolbar>
     </AppBar>
