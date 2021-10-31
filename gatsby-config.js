@@ -4,7 +4,6 @@ module.exports = {
     title: "Rgl Site",
   },
   plugins: [
-    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -19,8 +18,16 @@ module.exports = {
         component: require.resolve(`./src/app_common/app/App`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images/`,
+      },
+    },
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
   ],
