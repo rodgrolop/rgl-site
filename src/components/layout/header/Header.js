@@ -19,7 +19,7 @@ const Header = () => {
           width={64}
           height={64}
           placeholder="blurred"
-          layout="fixed"
+          layout="constrained"
         />
       </Toolbar>
     </AppBar>
