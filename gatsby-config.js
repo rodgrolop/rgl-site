@@ -1,17 +1,27 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.rodrigogross.me/",
+    siteUrl: "https://www.rodrigogross.me",
     title: "Rgl Site",
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Rgl Site`,
+        short_name: `Rgl Site`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#b71c1c`,
+        display: `standalone`,
         icon: "./src/assets/images/logo.png",
+        crossOrigin: "use-credentials",
       },
     },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -27,8 +37,6 @@ module.exports = {
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    "gatsby-plugin-offline",
   ],
 };
