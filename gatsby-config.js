@@ -5,15 +5,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Rgl Site`,
-        short_name: `Rgl Site`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#b71c1c`,
-        display: `standalone`,
-        icon: "./src/assets/images/logo.png",
+        name: "Rgl Site",
+        short_name: "Rgl Site",
+        start_url: "https://www.rodrigogross.me",
+        background_color: "#ffffff",
+        theme_color: "#b71c1c",
+        display: "standalone",
+        icon: "src/assets/images/icon.png",
         crossOrigin: "use-credentials",
       },
     },
@@ -23,15 +23,15 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve: "gatsby-plugin-layout",
       options: {
-        component: require.resolve(`./src/app_common/app/App`),
+        component: require.resolve("./src/app_common/app/App"),
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
+        name: "images",
         path: `${__dirname}/src/assets/images/`,
       },
     },
