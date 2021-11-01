@@ -20,6 +20,8 @@ const Header = () => {
           height={64}
           placeholder="blurred"
           layout="constrained"
+          quality={100}
+          formats={["auto", "webp", "avif"]}
         />
       </Toolbar>
     </AppBar>
