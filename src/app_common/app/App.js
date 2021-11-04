@@ -1,7 +1,7 @@
 import React from "react";
 
 // Layout MUI resources
-import { ThemeProvider } from "@mui/material/styles";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import CssBaseline from "@mui/material/CssBaseline";
 
 // Layout custom components
