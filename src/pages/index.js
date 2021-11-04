@@ -1,13 +1,20 @@
-import * as React from "react";
-import Container from "@mui/material/Container";
+import React, { useEffect, useRef } from "react";
+
+// Layout MUI resources
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+
+// Custom components
+import HomeBanner from "../components/three/home_banner/HomeBanner";
 import Link from "../components/Link";
 import Copyright from "../components/Copyright";
 
 export default function Index() {
+  useEffect(() => {}, []);
+
   return (
-    <Container maxWidth="sm">
+    <>
+      <HomeBanner />
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           RGL
@@ -17,6 +24,6 @@ export default function Index() {
         </Link>
         <Copyright />
       </Box>
-    </Container>
+    </>
   );
 }

@@ -1,7 +1,6 @@
 const styles = {
-  logo: {
-    marginLeft: 10,
+  container: {
+    paddingTop: 90,
   },
 };
-
 export default styles;
